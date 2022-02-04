@@ -23,24 +23,21 @@ img {
   border-radius: 2px;
 }
 
+img.first {
+  position: relative;
+  left: 10px;
+}
+
 img.second {
   z-index: 1;
   position: relative;
-  left: -50px
-
-}
-
-img.third {
-  z-index: 2;
-  position: relative;
-  left: -100px;
+  left: -45px;
 }
 
 #btn-action {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 button {
@@ -55,4 +52,3 @@ button {
   margin-bottom: 4px;
   margin-top: 4px;
 }
-
