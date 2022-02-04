@@ -7,15 +7,15 @@ let hasBlackJack = false;
 let isAlive = false;
 let message = '';
 let sum = 0;
-let messageEl = document.getElementById('message-el');
-let sumEl = document.getElementById('sum-el');
-let cardsEl = document.querySelector('#cards-el');
-let playerEl = document.querySelector('#player-el');
+const messageEl = document.querySelector('#message-el');
+const sumEl = document.querySelector('#sum-el');
+const cardsEl = document.querySelector('#cards-el');
+const playerEl = document.querySelector('#player-el');
 
 playerEl.textContent = player.name + ': $' + player.chips;
 function startGame() {
-  let firstCard = getRandomCard();
-  let secondCard = getRandomCard();
+  const firstCard = getRandomCard();
+  const secondCard = getRandomCard();
   cards = [firstCard, secondCard];
   sum = firstCard + secondCard;
   isAlive = true;
@@ -51,7 +51,7 @@ function renderGame() {
 
 function newCard() {
   if (isAlive === true && hasBlackJack === false) {
-    let card = getRandomCard();
+    const card = getRandomCard();
     sum += card;
     cards.push(card);
 
