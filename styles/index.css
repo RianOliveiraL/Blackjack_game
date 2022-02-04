@@ -11,6 +11,31 @@ body {
   padding: 0;
 }
 
+#header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vw;
+}
+
+img {
+  border: none;
+  width: 5.2vw;
+  border-radius: 2px;
+}
+
+img.second {
+  z-index: 1;
+  position: relative;
+  left: -50px
+
+}
+
+img.third {
+  z-index: 2;
+  position: relative;
+  left: -100px;
+}
+
 #btn-action {
   display: flex;
   flex-direction: column;
@@ -30,3 +55,4 @@ button {
   margin-bottom: 4px;
   margin-top: 4px;
 }
+
