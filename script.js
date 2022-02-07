@@ -1,5 +1,5 @@
 let player = {
-  name: '',
+  name: "player1",
   chips: 200,
 };
 let cards = [];
@@ -7,12 +7,14 @@ let hasBlackJack = false;
 let isAlive = false;
 let message = '';
 let sum = 0;
+let run = false;
 const messageEl = document.querySelector('#message-el');
 const sumEl = document.querySelector('#sum-el');
 const cardsEl = document.querySelector('#cards-el');
 const playerEl = document.querySelector('#player-el');
 const textEl = document.querySelector('#text-el');
 const submitBtn = document.querySelector('#submit-btn');
+const startBtn = document.querySelector('#start-btn').disabled = false;
 
 playerEl.textContent = player.name + ': $' + player.chips;
 function startGame() {
@@ -21,6 +23,7 @@ function startGame() {
   cards = [firstCard, secondCard];
   sum = firstCard + secondCard;
   isAlive = true;
+  run = true;
   renderGame();
 }
 function getRandomCard() {
@@ -46,10 +49,14 @@ function renderGame() {
   } else {
     message = "You're out of the game";
     isAlive = false;
+    run = false
   }
-
   messageEl.textContent = message;
 }
+  if (run === true && isAlive === true) {
+    startBtn = true;
+  }
+
 
 function newCard() {
   if (isAlive === true && hasBlackJack === false) {
