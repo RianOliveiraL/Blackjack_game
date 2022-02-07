@@ -19,7 +19,7 @@ const submitBtn = document.querySelector('#submit-btn')
 
 playerEl.textContent = player.name + ': $' + player.chips
 function startGame() {
-  if (run === false && isAlive === false || hasBlackJack == true) {
+  if (run === false && isAlive === false || hasBlackJack === true) {
     const firstCard = getRandomCard()
     const secondCard = getRandomCard()
     cards = [firstCard, secondCard]
