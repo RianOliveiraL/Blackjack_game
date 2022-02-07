@@ -1,0 +1,46 @@
+
+
+body {
+  background-image: url(../img/table.jpg);
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-size: cover;
+  font-weight: bold;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button {
+  color: #016f32;
+  width: 150px;
+  background: goldenrod;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+#hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#player1 {
+  margin-left: 15%;
+}
+
+#player2 {
+  margin-right: 15%;
+}
